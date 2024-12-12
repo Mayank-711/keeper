@@ -1,51 +1,61 @@
-.navbar {
-    background-color: darkgoldenrod;
-    width: 100%;
-    height: 70px;
-    font-size: larger;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex; /* Added to align items */
-    align-items: center; /* Center vertically */
-    justify-content: space-between; /* Optional: space out items */
-    padding: 0 20px; /* Added padding for inner content */
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    border-bottom: 2px black solid;
-    margin:auto -16px;
-    margin-top: -16px;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    background: #eee;
+    padding: 0 16px;
   }
   
+  header {
+    background-color: #f5ba13;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
   
-.footer{
-    background-color: darkgoldenrod;
-    width: 100% ;
-    height: 40px;
-    font-size: larger;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex; /* Added to align items */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Optional: space out items */
-    padding: 0 20px; /* Added padding for inner content */
-    box-sizing: border-box;
-    border-top: 2px black solid;
-    margin-top: 316px;
-}
-
-.note {
-    margin-top: 20px;
-    width: 400px;
-    height: 150px;
-    border: 1px black solid;
-    background-color: grey;
-    color : black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  header h1 {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+  }
+  
+  footer {
+    background-color: #f5ba13;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   border-radius: 7px;
-}
-.note h1{
-    font-size: 25px;
-}
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+    margin: auto -16px;
+    width: 100%;
+    height: 2.5rem;
+  }
+  
+  footer p {
+    color: #ccc;
+  }
+  .note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+  }
+  .note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+  .note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
